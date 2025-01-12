@@ -1,0 +1,19 @@
+// src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
+import './index.css';
+import App from './App';
+import { NotificationProvider } from './context/NotificationContext';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <NotificationProvider>
+        <App />
+      </NotificationProvider>
+    </Provider>
+  </React.StrictMode>
+);
