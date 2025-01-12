@@ -8,6 +8,20 @@ pipeline {
             }
         }
 
+        stage('Setup Environment') {
+            steps {
+                script {
+                    // Crear archivo .env
+                    writeFile file: '.env', text: '''
+                        REACT_APP_API_URL=http://localhost/api
+                        MONGODB_URI=mongodb+srv://sergiogonzzp:2003@inventoryapp.yuxtk.mongodb.net/
+                        JWT_SECRET=your_jwt_secret_here
+                        PORT=5000
+                    '''
+                }
+            }
+        }
+
         stage('Install Dependencies') {
             parallel {
                 stage('Frontend Dependencies') {
