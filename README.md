@@ -1,8 +1,5 @@
 # Sistema de Gestión de Inventario 📦
 
-![GitHub Actions](https://github.com/[usuario]/[repo]/workflows/CI/CD%20Pipeline/badge.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 Sistema de gestión de inventario desarrollado con MERN Stack (MongoDB, Express, React, Node.js), implementando prácticas DevOps modernas incluyendo containerización con Docker, CI/CD con GitHub Actions y monitorización con Prometheus y Grafana.
 
 ## 🚀 Características
