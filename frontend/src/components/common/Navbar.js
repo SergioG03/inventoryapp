@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <Package className="h-8 w-8 text-white" />
-              <span className="ml-2 text-white text-lg font-bold">Inventory App</span>
+              <span className="ml-2 text-white text-lg font-bold">Inventory</span>
             </Link>
           </div>
 
