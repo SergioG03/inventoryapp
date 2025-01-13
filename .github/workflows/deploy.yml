@@ -30,8 +30,7 @@ jobs:
     - name: Run Backend Tests
       working-directory: ./backend
       run: |
-        npm run test:auth
-        npm run test:product
+        npm run test
       env:
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
         JWT_SECRET: ${{ secrets.JWT_SECRET }}
